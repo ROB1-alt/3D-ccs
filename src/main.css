@@ -7,6 +7,9 @@
     justify-content: center;
 }
 
+.container *{
+    transform-style: preserve-3d;
+}
 .container .element{
     width: 200px;
     height: 200px;
@@ -31,4 +34,21 @@
 
 .container-5:hover .element{
     transform: skewX(25deg) ;
+}
+
+.container-11 .element{
+   position: relative;
+}
+
+.container-11 .element .inner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    background: red;  
+}
+
+.container-11:hover .element{
+    transform: rotateX(70deg) ;
 }
